@@ -3,5 +3,5 @@ function print(){
 console.log (helloWorld);
 }
 
-print()
+// print()
 
