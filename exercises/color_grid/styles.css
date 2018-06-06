@@ -1,12 +1,32 @@
+
 *{
     margin: 0;
     font-size: 0;
     box-sizing: border-box;
 }
-
+#grid{
+    width: 80%;
+    margin: auto;
+    height: 500px;
+}
+.box{
+    height: 25%;
+}
+.pink{
+    height: 100%;
+    background-color: #F5C6D6
+}
+.darkPink{
+    height: 100%;
+    background-color:#EE2E84;
+    width: 25%;
+    display: inline-block;
+    border: 5px solid white;
+}
+/*
 #box1a{
     font-size: 10px;
-    background-color: #F5C6D6;
+    background-color: #EE2E84;
     display: inline-block;
     padding: 100px;
     margin: 30px 100px;
@@ -87,4 +107,4 @@
     background-color:#E76E34;
     padding: 100px;
     margin: 5px;
-}
+} */

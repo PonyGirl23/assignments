@@ -9,23 +9,23 @@ just fix the existing ones.
 
 // Written by Kent, Clark
 
-var enemieName = ["Lex","Batman","Darkseid","Brainiac","General Zod","Doomsday"];
+var enemies = ["Lex","Batman","Darkseid","Brainiac","General Zod","Doomsday"];
 
 function whoWins(isThereKryptonite, enemyName){
     if(!isThereKryptonite) {
-        return "Superman beats", enemieName + "of course";
-}   else{
-    return "Depends on how quick Superman can get rid of the Kryptonite.", enemieName + " could possibly win this one.";
-}}
-    for (var i=0; i < enemieName.length; i++);
-{
-    var isThereKryptonite;
-    if (i % 2 === 0) {
-        isThereKryptonite = true;
+        return "Superman beats", enemyName + " of course";
     } else {
-        isThereKryptonite = false;
+        return "Depends on how quick Superman can get rid of the Kryptonite.", enemyName + " could possibly win this one.";
+    }   
+}
+    for (var i = 0; i < enemies.length; i++){
+        var isThereKryptonite;
+        if (i % 2 === 0) {
+            isThereKryptonite = true;
+        } else {
+            isThereKryptonite = false;
     }
-    console.log(whoWins(isThereKryptonite, enemieName[i]));
+    console.log(whoWins(isThereKryptonite, enemies[i]));
 }
 
 function howAttractedIsLoisLaneToMe(){
