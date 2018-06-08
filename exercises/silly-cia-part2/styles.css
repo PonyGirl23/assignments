@@ -20,3 +20,6 @@ a:hover{
 .image{
     float: left;
 }
+p .bold{
+    font-weight: bold;
+}

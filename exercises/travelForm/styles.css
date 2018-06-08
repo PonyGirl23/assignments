@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+    background-color: lightskyblue;
+}
+label{
+    display: block;
+    margin-left: 825px;
+    margin-top: 25px;
+}
+button{
+    margin-left: 825px;
+    margin-top: 25px; 
+}

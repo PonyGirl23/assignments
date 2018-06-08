@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    
+</head>
+<body>
+    <h1>Escape Airlines</h1>
+    <form>
+        <label>First: <input type="text" name="fName" value="Name"></label>
+        <label>Last: <input type="text" name="lName" value="Surname"></label>
+        <label>Age: <input type="number" name="age" value="age"></label>
+        <label>Gender:</label>
+        <label> <input type="radio" name="gender" value"male" checked> Male</label>
+        <label> <input type="radio" name="gender" value="female"> Female</label>
+        <label> <input type="radio" name="gender" vale="nonBinary"> Non Binary</label>
+        <label>Destinantion:    
+            <select name="destination"> 
+            <option value="Hawaii">Hawaii</option>  
+            <option value="Puerto Rico">Puerto Rico</option>     
+            <option value="Alaska">Alaska</option>     
+            </select>
+        </label>
+        <label>Dietary Restrictions:</label>    
+        <label> <input type="checkbox" name="dairyFree" value="dairyFree">Dairy Free </label>   
+        <label> <input type="checkbox" name="glutenFree" value="glutenFree">Gluten Free</label>  
+        <label> <input type="checkbox" name="nutAllergy" value="nutAllergy">Nut Allergy</label>
+        <button>Submit</button>
+
+    </form>
+    <script src="index.js"></script>   
+</body>
+</html>

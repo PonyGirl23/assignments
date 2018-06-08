@@ -7,7 +7,6 @@ header{
 }   
 h1{
     text-align: center;
-    /* text-shadow: lightcoral; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 50;
     border: 2px solid black;
@@ -18,12 +17,13 @@ h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
     border: 1px solid black;
-    background-color: rgb(198, 206, 214);;
+    background-color: rgb(198, 206, 214);
 }
 h3{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: .5px solid black;
+    background-color: rgb(198, 206, 214);
 }
 .picContainer img{
     width: 100%;
@@ -31,29 +31,15 @@ h3{
 }
 .column {
     float: left;
-    width: 33.33%;
+    width: 33%;
+    border: .5px solid black;
 }
-/* .container1{
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-         column-count: 3;
- -webkit-column-width: 30px;
-    -moz-column-width: 30px;
-         column-width: 30px;
+.bottom{
+    display: inline-block;
+} 
+.bold{
+    font-weight: bold;
 }
-.container2{
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-         column-count: 3;
- -webkit-column-width: 30px;
-    -moz-column-width: 30px;
-         column-width: 30px;
-}.container3{
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-         column-count: 3;
- -webkit-column-width: 30px;
-    -moz-column-width: 30px;
-         column-width: 30px;
-} */
-
+.highlight{
+    background-color: red;
+}
