@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+     
+        <div>
+            <h1>"Mario Pest Control"</h1>
+        </div>
+
+        <form name= "mario">
+            <div>
+                <h2>Goombas:</h2>
+                <img src=http://vignette3.wikia.nocookie.net/mariofanon/images/0/0a/Grand_Raccoon_Goomba_SM3DW.png/revision/latest?cb=20111120220425>
+                <p>
+                    Price per Goomba removed: 5 Coins
+                </p>
+                <label>Goombas: <input step="5" min="0" type="number" id="goombas"></label>
+            </div>
+
+            <div>
+                <h2>Bob-ombs:</h2>
+                <img src=https://vignette.wikia.nocookie.net/mario/images/7/7b/250px-MPSR_King_Bob-omb.png/revision/latest?cb=20180330221552>
+                <p>                   
+                    Price per Bob-ombs removed: 7 Coins
+                </p>
+                <label>Bob-ombs:<input step="7" min="0" type="number" id="bobOms"></label>
+
+            </div>
+
+            <div>
+                <h2>Cheep-cheeps:</h2>
+                <img src=https://vignette.wikia.nocookie.net/mario/images/3/31/Deep_Cheep%2C_New_Super_Mario_Bros._U.png/revision/latest?cb=20121106191437>            
+                <p>                   
+                    Price per Cheep-cheeps removed: 11 Coins
+                </p>
+                <label>Cheep-cheeps:<input step="11" min="0" type="number" id="cheepCheep"></label>
+            </div>
+            <div>
+                <h2>Click to calculate final price:</h2>
+                <button id="submit" type="button">Submit</button>
+                <h2>Final Price:</h2>   
+                <p id="total">$ </p>
+            </div>
+
+            <footer>
+                <p>Mario@gmail.com</p>
+                <a href= "http://www.mario.com/">www.mario.com</a>
+                <p>27 Mario Cart Lane</p>
+                <P>Mario World, Mn 17563</P>
+                
+            </footer>
+
+
+
+
+
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
+<!-- onclick="output.display.value = eval(output.display.value)" -->
+<!-- type="button" id= "submit" -->
+<!-- onclick="tally()" -->
