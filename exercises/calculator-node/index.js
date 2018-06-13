@@ -1,27 +1,36 @@
-// var rs = require("readline-sync");
-//  console.log(rs);
-// readline-sync has a bunch of functions that are stored in objects
-
-// var rs = require("readline-sync");
-// var favFood = rs.question("What is your favorite food?");
-// console.log("Your favorite food is: " + favFood.toUpperCase() + "?");
-
-// var rs = require("readline-sync");
-// var favFood = rs.question("What is your favorite food?");
-// console.log(favFood.length);
-
-// var rs = require("readline-sync");
-// var favFood = rs.question("What is your favorite food?");
-// var favDessert = rs.question("What is your favorite dessert?");
-// console.log(favFood + " " + (favDessert));
-
-
+CALCULATOR:
 var rs = require("readline-sync");
-var hobbies = rs.question("What are your hobbies?");
-// var string = hobbies.length
-    function half(){
-    for(var i = 0; i < hobbies.legnth; i++);
-    let num = [];
 
-console.log(hobbies.charAt(hobbies.legnth % 2));
-}
+var x = rs.question("input number 1: ");
+var y = rs.question("input number 2: ");
+var operator = {
+    add: function(){
+        let total = Number(x) + Number(y);
+        return total;
+},  
+    subtract: function(){
+        let total = Number(x) - Number(y);
+        return total;
+},
+    multiply: function(){
+        let total = Number(x) * Number(y);
+        return total;
+},
+    divide: function(){
+        let total = Number(x) / Number(y);
+        return total;
+}};
+choice = ["add","subtract","multiply","divide"];
+index = rs.keyInSelect(choice, "Which function would you like to perform?");
+    if (index === 0){
+        console.log(operator.add());
+    }else if(index === 1){
+        console.log(operator.subtract());  
+    }else if(index === 2){
+        console.log(operator.multiply());
+    }else if(index === 3){ 
+        console.log(operator.divide());
+    }else{  
+        console.log(cancel);  
+ }
+ 

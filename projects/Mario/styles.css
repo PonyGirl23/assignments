@@ -1,0 +1,55 @@
+body{
+    background-image: url(http://www.handballtunisie.org/upload/2017/11/19/peerless-castle-front-door-super-mario-world-front-door-back-door-bowsers-castle-youtube-castle-front-door-l-e005d5452064de9b.jpg);
+}
+div{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 50px;
+}
+.baddies{
+    background-color: rgba(0, 85, 255, 0.50);
+    margin: 10px 10px
+}
+h1{
+    background-color:#FF0000;
+    font-size: 100px;
+    border: 5px solid black;
+}
+h2{
+    background-color: rgb(173,255,47);
+    margin: 20px 400px 20px;
+    font-size: 60px;
+    border: 5px solid rgba(16, 17, 15, 0.74);
+}
+p{
+    background-color:rgba(0,0,0);
+    margin: 20px 400px 20px;
+    font-size: 40px;
+    color: whitesmoke; 
+}
+label{
+    background-color: lavender;
+    margin: 50px;
+    font-size: 30px;
+    border: 5px solid rgba(16, 17, 15, 0.74); 
+    color: black;
+}
+#submit{
+    background-color: rgb(176,196,222);
+    font-size: 50px;
+    margin: 40px;
+    border: 10px solid lavender;
+    pointer-events: auto;
+}
+#total{
+    background-color: rgb(176,196,222);
+    font-size: 50px;
+    margin: 20px 500px 20px;
+    border: 5px solid rgba(16, 17, 15, 0.74);
+    color:black;
+}
+footer{
+    text-align: center;
+    /* background-color: rgb(176,196,222,0.85); */
+    margin: 20px 300px 20px;
+}
