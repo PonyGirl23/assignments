@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+    font-size: 400%;
+    background-color: saddlebrown;
+}
+img{
+    float: left;
+    padding-right: 10px;
+ }
+ #header{
+     background-color: 96, 71, 21, 0.9;
+ }
+ li{
+     display: inline;
+     margin: 105px;
+ }

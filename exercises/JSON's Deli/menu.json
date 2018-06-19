@@ -1,0 +1,82 @@
+{
+    "appetizers": [
+        {
+            "name": "ceviche",
+            "ingredients": [
+                "fresh fish",
+                "red onion",
+                "fresh citrus juices",
+                "cucumber",
+                "tomato",
+                "cilantro"
+            ],
+            "description": "fresh fish and diced veggies marinated in citrus, sevred with tortilla chips"
+        },
+        {
+            "name": "fried green tomatoes",
+            "ingredients": [
+                "green tomatoes",
+                "breadcrumbs",
+                "aioli"
+            ],
+            "description": "sliced green tomatoes coated in breadcrumbs fried, served with spicy aioli dipping sauce"
+        }
+    ]
+}
+{
+    "cold sanwiches": [
+        {
+            "name": "club",
+            "ingredients": ["turkey","bacon","avocado","lettuce","tomato","onion","provolone cheese", "mayo"],
+            "description": "traditional club sandwich on house made sourdough served with chips and a pickle"
+        },
+        {
+            "name": "tuna salad",
+            "ingredients": ["albacore tuna","red onions","celery","mayo","whole grain mustard"],
+            "description": "tuna salad on house made rye bread served with chips and a pickle",
+        },
+    ]
+}
+{
+    "hot sanwiches": [
+        {
+            "name": "blt grilled cheese",
+            "ingredients": ["bacon","lettuce","tomato","gruyere cheese"],
+            "description": "fancy grilled cheese blt served with "
+        },
+        {
+            "name": "",
+            "ingredients": [],
+            "description": "",
+        },
+    ]
+}
+{
+    "desserts": [
+        {
+            "name": "",
+            "ingredients": [],
+            "description": ""
+        },
+        {
+            "name": "",
+            "ingredients": [],
+            "description": "",
+        },
+    ]
+}
+{
+    "drinks": [
+        {
+            "name": "",
+            "ingredients": [],
+            "description": ""
+        },
+        {
+            "name": "",
+            "ingredients": [],
+            "description": "",
+        },
+    ]
+}
+

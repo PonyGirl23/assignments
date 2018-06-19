@@ -1,0 +1,59 @@
+.top{
+    display: flex;
+}
+.bottom{
+    display: flex;
+}
+@keyframes box1{
+    0% {left: 0px; top:0px;}
+    25% {left: 200px; top:0px;}
+    50% {left:200px; top:200px;}
+    75% {left:0px; top:200px;}
+    100% {left: 0px; top:0px;}    
+}
+#box1{
+    background-color: red;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    margin-left: 150px;
+    margin-top: 50px;
+    
+}
+#box1:hover{
+    animation-name: box1;
+    animation-duration: 5s;
+}
+#box2{
+    background-color: orangered;
+    height: 500px;
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+#box3{
+    background-color: yellow;
+    height: 500px;
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+#box4{
+    background-color: green;
+    height: 500px;
+    width: 500px;
+    margin-left: 150px;    
+    margin-top: 50px;
+}#box5{
+    background-color: blue;
+    height: 500px;
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 50px;
+}#box6{
+    background-color: blueviolet;
+    height: 500px;
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
