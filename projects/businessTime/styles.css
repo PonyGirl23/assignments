@@ -1,16 +1,77 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
 h1{
     text-align: center;
     font-size: 400%;
-    background-color: saddlebrown;
+    background-color: #640700;
+    margin-top: -8px;
+    margin-bottom: 0px;
 }
 img{
     float: left;
     padding-right: 10px;
  }
- #header{
-     background-color: 96, 71, 21, 0.9;
+ .header{
+     background-color: #a05813e3;
+     height: 51px;
+ }
+ a:hover { 
+    color: blue;
  }
  li{
      display: inline;
      margin: 105px;
  }
+ a{
+    color: black;
+ }
+ nav {
+    padding: 1px;
+ }
+ .content{
+    height: 100%;
+    background-color: #c59566e6;
+    margin-top: -16px; 
+ }
+ 
+#address {
+    width: 18%;
+    display: grid;
+    grid-template-areas: 
+    "location address"
+}
+#address span{
+    grid-area: location;
+}
+#address p {
+    grid-area: address;
+    position: relative;
+    top:-13px;
+}
+footer{
+    background-color: #a0571363;
+}
+.footie{
+    position: relative;
+    height: 400px;
+    background-image: url(http://www.neworleansonline.com/images/headers/listings/181.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media(max-width:700px){
+    nav{
+        display: block;
+    }
+    img{
+    width: 50%;
+    }
+
+}

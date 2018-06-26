@@ -1,0 +1,66 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color: #c59566e6;
+}
+img{
+    float: left;
+    padding-right: 10px;
+    margin-bottom: 382px;
+    margin-right: -37px;
+}
+h1{
+    text-align: center;
+    font-size: 400%;
+    background-color: #640700;
+    margin-top: -8px;
+    margin-bottom: 0px;
+}
+.menu{
+    text-align: center;
+    color: wheat;
+}
+.text{
+    color:wheat;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdCPtJuQT313e7blHYV2Kfi_H-yo3HkDaz7OHgRP1tfitMuuT1fg);
+    margin-top: -16px;
+    margin-bottom: -16px;
+}
+.title{
+    color: black;
+}
+#address {
+    width: 18%;
+    display: grid;
+    grid-template-areas: 
+    "location address";
+}
+#address span{
+    grid-area: location;
+}
+#address p {
+    grid-area: address;
+    position: relative;
+    top:-13px;
+}
+footer{
+    background-color: #a0571363;
+}
+@media(max-width:700px){
+nav{
+    display: block;
+}
+img{
+    width: 40%;
+}
+text{
+    width: 25%;  
+}
+}
+
