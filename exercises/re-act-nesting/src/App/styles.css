@@ -1,0 +1,15 @@
+body{
+    margin: 0px;
+}
+.container{
+    height: 34vh;
+}
+.navbar-card{
+background-color: red;
+}
+.body-card{
+    background-color: green;
+}
+.footer-card{
+    background-color: red;
+}

@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from './App';
+ReactDOM.render(<App />, document.getElementById('root'));
 
-ReactDOM.render(
     <body>
         <nav>
             <img src="https://ae01.alicdn.com/kf/HTB1txk9JpXXXXaUXFXXq6xXFXXXG/Photography-Background-Under-the-Sea-World-Personalized-Vinyl-Backdrops-for-Photography-Custom-Photo-Studio-Props-Fotografia.jpg_640x640.jpg" alt=""/>
@@ -16,6 +17,4 @@ ReactDOM.render(
             <img src="http://www.tropicalchartersvi.com/wp-content/uploads/2017/05/jolly-mon1-700x700.jpg" alt="boats" />
         </div>
     </body>
-    ,
-    document.getElementById("root")
-);
+    

@@ -14,12 +14,12 @@ function Player(pName, pItem = "sword", pHP = 100, pCHP = 100, pATP = Math.floor
         pATP,
     }
 };
-// console.log (Player(this));
 
 let user = rs.question("Hello player, what is your name? ");
 console.log("Hello " + user + " Let's begin!");
 
 let player1 = new Player(user);
+console.log(player1)
 
 var isEnemy = {
     yes: "Out of the forest comes a terrifying warrior!!",
@@ -31,7 +31,7 @@ function checkForEnemy() {
     return checkForE;
 };
 
-function Enemy(eName, eItem, eHP = 100, eCHP, eATP = Math.floor(Math.random() * 75)) {
+function Enemy(eName, eItem, eHP = 100, eCHP = 100, eATP = Math.floor(Math.random() * 75)) {
     this.eName = eName;
     this.eItem = eItem;
     this.eHP = eHP;
@@ -45,8 +45,6 @@ function Enemy(eName, eItem, eHP = 100, eCHP, eATP = Math.floor(Math.random() * 
         eATP
     }
 };
-// console.log(Enemy(this));
-// console.log(Enemy(this.eHtP));
 
 function generateEnemy() {
     var names = ["Defecto", "Creeper", "Gnar"];
@@ -58,41 +56,48 @@ function generateEnemy() {
         enemy,
     }
 };
+// var playerCHP = 
 
-var pCurrentHP = (Player(this.pCHP) = Enemy.eATP - Player.pHP);
-var eCurrentHP = (Enemy(this.eCHP) = Player.pATP - Enemy.eHP);
+// Player.prototype.pCurrentHP = function () {
+//     this.pCHP = Enemy.eATP - Player.pHP;
+//     return this.pCHP;
+// }
+// console.log(this.pCHP);
 
-function genFight() {
+// Enemy.prototype.eCurrentHP = function () {
+//     this.eCHP = Player.pATP - Enemy.eHP;
+//     return this.eCHP;
+// }
+// console.log(this.eCHP);
+
+function genFight(genE) {
     var fight = true;
     while (fight) {
-        if (pCurrentHP <= 1 && eCurrentHP <= 1) {
-            continue;
-        } else {
-            (pCurrentHP > 1 || eCurrentHP > 1)
-            break;
-        }
+        console.log("hello");
+        player1.pCHP = genE.eATP - player1.pHP;
+        genE.eCHP = player1.pATP - genE.eHP;
+        if (player1.pCHP >= 1 && player1.pChp > genE.eCHP) 
+            console.log(winning.p);
+        } else if {
+            (genE.eCHP >= 1 && genE.eCHP > player1.pChp);
+        console.log(winning.e);
+    } else {
+        (player1.pCHP <= 0 || genE.eCHP <= 0)
+        fight = !fight;
     }
 };
 
-// var pDead = "You have been slaughtered!!";
-//     var eDead = "You have vanquished the enemy!!";
-//     if (pHit > eHit && pHit > 0) {
-//         return pHit;
-//     } else if (pHit < 0) {
-//         return pDead;
-//     } else if (eHit > pHit && eHit > 0) {
-//         return eHit;
-//     } else if (eHit < 0) {
-//         return eDead;
-//     }
-// };
+var winning = {
+    p: " ,you are clearly superior!",
+    e: " , is crushing you!!"
+}
+var outcome = {
+    pDead: "You have been slaughtered!!",
+    eDead: "You have vanquished the enemy!!"
+}
 
-// var winning = {
-//     p: " ,you are clearly superior!",
-//     e: " , is crushing you!!"
-// }
 
-Game:
+// Game:
 var win = false;
 while (true) {
     walking = ["w"];
@@ -109,13 +114,12 @@ while (true) {
                     // commence fight sequence
                     let genE = generateEnemy();
                     console.log("You shiver as " + genE.eName + ", the harbinger of death appears with his " + genE.eItem + " to kill you! " + player1.pName + " get your sword ready to fight for your life!!!");
-                    // var fighting = 
-                    genFight();
-console.log (genFight());
-                
-//                     
 
-//                     
+
+                    genFight(genE);
+                    enemyYes = !enemyYes;
+
+
                     //     while enemy hp > 0 AND player hp  > 0 {
                     //     subtract damage from player
                     //     subtract damage from enemy
@@ -124,16 +128,8 @@ console.log (genFight());
                     //     if player hp is < 0 BREAK and lose
                     //     else continue on
 
-                    //     let fSequence = genFight();
-                    // // if (fSequence === pHit) {
-                    // if (fSequence === genFight.pHit) {
-                    //     console.log(winning.p);
-                    //     // } else if (fSequence === ehit) {
-                    // } else if (fSequence === genFight.eHit) {
-                    //     console.log(winning.e);
-                    // } else if (fSequence === genFight.pDead) {
-                    //     console.log(pDead);
-                    // } else if (fSequence === genFight.eDead) {
-                    //     console.log(eDead);
-                    // }
-            }}}}}
+                }
+            }
+        }
+    }
+}
