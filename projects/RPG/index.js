@@ -1,25 +1,19 @@
 var rs = require("readline-sync");
 
-function Player(pName, pItem = "sword", pHP = 100, pCHP = 100, pATP = Math.floor(Math.random() * 75)) {
+function Player(pName, pHP = 100, pCHP = 100, pATP = Math.floor(Math.random() * 75)) {
     this.pName = pName;
-    this.pItem = pItem;
+    this.pItem = 'sword';
     this.pHP = pHP;
     this.pCHP = pCHP;
     this.pATP = pATP;
-    return {
-        pName,
-        pItem,
-        pHP,
-        pCHP,
-        pATP,
-    }
+    this.winPoints = 0;
+    this.alive = true;
 };
 
 let user = rs.question("Hello player, what is your name? ");
 console.log("Hello " + user + " Let's begin!");
 
 let player1 = new Player(user);
-console.log(player1)
 
 var isEnemy = {
     yes: "Out of the forest comes a terrifying warrior!!",
@@ -37,60 +31,39 @@ function Enemy(eName, eItem, eHP = 100, eCHP = 100, eATP = Math.floor(Math.rando
     this.eHP = eHP;
     this.eCHP = eCHP;
     this.eATP = eATP;
-    return {
-        eName,
-        eItem,
-        eHP,
-        eCHP,
-        eATP
-    }
+    
 };
 
 function generateEnemy() {
     var names = ["Defecto", "Creeper", "Gnar"];
     var items = ["Evil Magic", "Invisibility Cloak", "Double-Headed Axe"];
     var enemy = new Enemy(names[Math.floor(Math.random() * names.length)], items[Math.floor(Math.random() * items.length)]);
-    return {
-        names,
-        items,
-        enemy,
-    }
+    return enemy;
 };
-// var playerCHP = 
-
-// Player.prototype.pCurrentHP = function () {
-//     this.pCHP = Enemy.eATP - Player.pHP;
-//     return this.pCHP;
-// }
-// console.log(this.pCHP);
-
-// Enemy.prototype.eCurrentHP = function () {
-//     this.eCHP = Player.pATP - Enemy.eHP;
-//     return this.eCHP;
-// }
-// console.log(this.eCHP);
 
 function genFight(genE) {
     var fight = true;
     while (fight) {
-        console.log("hello");
-        player1.pCHP = genE.eATP - player1.pHP;
-        genE.eCHP = player1.pATP - genE.eHP;
-        if (player1.pCHP >= 1 && player1.pChp > genE.eCHP) 
-            console.log(winning.p);
-        } else if {
-            (genE.eCHP >= 1 && genE.eCHP > player1.pChp);
-        console.log(winning.e);
-    } else {
-        (player1.pCHP <= 0 || genE.eCHP <= 0)
-        fight = !fight;
+        player1.pCHP = player1.pCHP - genE.eATP;
+        genE.eCHP = genE.eCHP - player1.pATP;
+        if (player1.pCHP > genE.eCHP && genE.eCHP > 0) {
+            console.log(`${player1.pName} is destroying ${genE.eName} \n ${player1.pName} has ${player1.pCHP} points remaining and ${genE.eName} has ${genE.eCHP} points remaining `)
+        } else if (genE.eCHP > player1.pCHP && player1.pCHP >= 0) {
+            console.log(`${genE.eName} is destroying ${player1.pName} \n ${genE.eName} has ${genE.eCHP} points remaining and ${player1.pName} has ${player1.pCHP} points remaining `)
+        } else if (player1.pCHP <= 0 || genE.eCHP <= 0) {
+            if (genE.eCHP <= 0) {
+                console.log(outcome.eDead)
+                player1.winPoints++
+                fight = false;
+            } else{
+                console.log(outcome.pDead)
+                player1.alive = false;
+                fight = false;
+            }
+        }
     }
-};
-
-var winning = {
-    p: " ,you are clearly superior!",
-    e: " , is crushing you!!"
 }
+
 var outcome = {
     pDead: "You have been slaughtered!!",
     eDead: "You have vanquished the enemy!!"
@@ -98,38 +71,26 @@ var outcome = {
 
 
 // Game:
-var win = false;
-while (true) {
+while (player1.winPoints < 3 && player1.alive) {
     walking = ["w"];
-    isWalking = rs.keyInSelect(walking, "Press 'W' to begin walking");
+    isWalking = rs.keyInSelect(walking, "Press 1 to begin walking");
     if (isWalking === 0) {
         let checkForE = checkForEnemy();
         if (checkForE <= 2) {
             console.log(isEnemy.yes);
-            var enemyYes = true;
-            while (enemyYes) {
+            var enemyLives = true;
+            while (enemyLives) {
                 var options = ["Fight like a fierce gladiator", "Run like a coward"];
                 var choice = rs.keyInSelect(options, "What fate do you choose?");
                 if (choice === 0) {
                     // commence fight sequence
                     let genE = generateEnemy();
                     console.log("You shiver as " + genE.eName + ", the harbinger of death appears with his " + genE.eItem + " to kill you! " + player1.pName + " get your sword ready to fight for your life!!!");
-
-
                     genFight(genE);
-                    enemyYes = !enemyYes;
-
-
-                    //     while enemy hp > 0 AND player hp  > 0 {
-                    //     subtract damage from player
-                    //     subtract damage from enemy
-                    //     }
-                    //     AFTER loop, check the damages
-                    //     if player hp is < 0 BREAK and lose
-                    //     else continue on
-
+                    enemyLives = false;
                 }
             }
         }
     }
 }
+

@@ -6,7 +6,7 @@ export default class Form extends Component {
         super()
         this.state = {
             names: "",
-            nameList: []
+            namesList: []
         }
     }
     handleChange = (e) => {
@@ -21,21 +21,20 @@ export default class Form extends Component {
             }
         })
     }
-
     render() {
-        return (
+        return ( 
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <h1>Name List:</h1>
                     <input type="text"
-                        name="names"
-                        placeholder="names"
-                        value={this.state.names}
-                        onChange={this.handleChange}/>
+                    name="names"
+                    placeholder="names"
+                    value={this.state.names}
+                    onChange={this.handleChange}/>
                     <button>Submit</button>
                 </form>
-                <NamesDisplay 
-                names={this.state.names} 
+                <NamesDisplay
+                names={this.state.names}
                 nameList={this.state.nameList} />
             </div>
         )
