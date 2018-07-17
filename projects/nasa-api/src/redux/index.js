@@ -7,9 +7,9 @@ const initialState = {
 }
 
 // Action Creators => Send Action Objects:
-export const getStars = () => {
+export const getStars = (id) => {
     return dispatch => {
-        axios.get("https://images-api.nasa.gov/search?q=stars")
+        axios.get("https://images-api.nasa.gov/search?nasa_id=" + id)
             .then(response => {
                 dispatch({
                     type: "GET_STARS",
@@ -36,3 +36,4 @@ const store = createStore(starReducer, applyMiddleware(thunk))
 store.subscribe(() => console.log(store.getState()))
 
 export default store
+// https://images-api.nasa.gov/search?q=stars

@@ -6,7 +6,7 @@ function Stars(props) {
     return (
         <div>
             <div className="title"> {props.name}</div>
-            <img className="img" src={props.img} />
+            <img className="img" src={props.img} /> 
             <div className="info"> {props.info }</div>
         </div>
     )
