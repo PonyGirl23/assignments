@@ -1,6 +1,25 @@
 /* /////////////////////////// */
+
 /* Nav Bar: */
-.nav {
+
+.bg-light {
+    background-color: black !important;
+    /* color: whitesmoke !important; */
+}
+
+.navbar-brand {
+    color: #79a0ce !important;
+}
+
+.nav-link {
+    color: #79a0ce !important;
+}
+
+.dropdown-item {
+    color: #79a0ce !important;
+}
+
+.Header {
     display: grid;
     grid-template-columns: 1fr;
     background-image: url(https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/images/378589main_cepb_1920_full.jpg);
@@ -9,54 +28,41 @@
     text-shadow: 3px 3px rgba(85, 85, 85, 1);
     text-align: center;
     color: #1d8484;
-    font-size: 2.8rem;
-}
-
-.Header {
     padding-top: 10px;
-    font-size: 5.5rem;
-    padding-left: 300px;
-}
-
-.Links {
-    display: flex;
-    justify-content: space-around;
-    height: 65px;
-    padding-left: 337px;
-}
-
-.Links a {
-color: #0c7373;
-text-shadow: 2px 2px rgba(85, 85, 85, 1);
+    padding-bottom: 13px;
+    margin-bottom: 0px;
+    font-size: xx-large;
 }
 
 /* /////////////////////////// */
+
 /* Footer: */
+
 .Footie {
     display: grid;
     grid-template-columns: 1fr;
-    /* background-image: url(https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/images/378589main_cepb_1920_full.jpg); */
     background-color: black;
     background-size: cover;
     text-align: center;
     text-shadow: 1px 1px rgba(85, 85, 85, 1);
     color: #0c7373;
-    height: 200px;
- }
+}
 
- .quote {
-    padding-top: 61px;
+.quote {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 /* /////////////////////////// */
- /* Home Page: */
+
+/* Home Page: */
+
 .Home {
     height: 100%;
     display: grid;
     grid-gap: 3px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-areas: 
-    "t t p p p p p p p p p p p";
+    grid-template-areas: "t t p p p p p p p p p p p";
     text-align: center;
     background-color: rgba(15, 15, 15, 0.93);
     color: #79a0ce;
@@ -64,7 +70,7 @@ text-shadow: 2px 2px rgba(85, 85, 85, 1);
     font-size: xx-large;
 }
 
-.twinkle{
+.twinkle {
     grid-area: t;
     margin-left: 10px;
     background-image: url(https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/spitzeriras19312rect_sm.jpg);
@@ -73,54 +79,92 @@ text-shadow: 2px 2px rgba(85, 85, 85, 1);
     height: 1000px;
 }
 
-.poem{
+.poem {
     grid-area: p;
     padding-top: 130px;
 }
 
 /* /////////////////////////// */
+
 /* Pick A Star Page: */
+
 .starList {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 3px;
-    padding-top: 72px;
-    background-color: black;
     height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "c c d d d d d d d d d d";
+    text-align: center;
+    background-color: rgba(15, 15, 15, 0.93);
+    color: #79a0ce;
+    text-shadow: 2px 2px black;
+    font-size: large;
+}
+
+form {
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .dropMenu {
-    padding-left: 100px;
-    text-shadow: 1px 1px whitesmoke;
+    padding-top: 100px;
+    text-shadow: 1px 1px black;
     color: #79a0ce;
-    font-size: 50px;
+    font-size: 30px;
+    max-width: 100%;
 }
 
-.Cosmos {
-    background-image: url(https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/images/453249main_p1014a2_full.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1000px;
+label select {
+    width: 60%;
+    margin: auto;
 }
 
 .title {
     margin-top: 50px;
     color: #79a0ce;
     text-align: center;
-    text-shadow: 1px 1px whitesmoke;
+    text-shadow: 1px 1px black;
     font-size: xx-large;
 }
 
 .info {
     margin-top: 20px;
     color: #79a0ce;
-    text-shadow: 1px 1px whitesmoke;
-    font-size: xx-large;
+    text-shadow: 1px 1px black;
+    font-size: x-large;
+    padding-left: 100px;
 }
 
+.nasa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    height: 800px;
+    width: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.Cosmos {
+    grid-area: c;
+    background-image: url(https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/images/453249main_p1014a2_full.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
 
 /* /////////////////////////// */
+
 /* In Depth Page: */
+
 .inDepth {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -128,26 +172,94 @@ text-shadow: 2px 2px rgba(85, 85, 85, 1);
     background-color: rgba(15, 15, 15, 0.84);
 }
 
-.swirl{
+.swirl {
     background-image: url(https://www.nasa.gov/sites/default/files/images/508574main_M31_XMM_HERSCHEL_full.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 1000px;
 }
 
-.text{
+.text {
     color: #79a0ce;
-    text-shadow: 1px 1px black ;
+    text-shadow: 1px 1px black;
     font-size: larger;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 100px;
     text-align: center;
+    font-size: x-large;
 }
 
-/* Star Photos: */
+/* /////////////////////////// */
 
-/* https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001894/GSFC_20171208_Archive_e001894~thumb.jpg */
+/* Nav Bar: */
 
-/* https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/images/453249main_p1014a2_full.jpg */
+@media only screen and (min-width: 0px) {
+    #navbarNavDropdown {
+        display: block;
+    }
+    .Header {
+        display: block;
+        font-size: 5.5rem;
+    }
+}
 
-/* https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia13500.jpg */
+@media only screen and (max-width: 700px) {
+    .Header {
+        display: block;
+        font-size: 35px;
+    }
+}
+
+/* /////////////////////////// */
+
+/* Footer: */
+
+@media only screen and (min-width: 400px) {
+    .Footie {
+        display: block;
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 969px) {
+    .Footie {
+        display: block;
+        font-size: 35px;
+    }
+}
+
+/* /////////////////////////// */
+
+/* Home Page: */
+
+@media only screen and (min-width: 0px) {
+    .poem {
+        font-size: xx-large;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .poem {
+        font-size: 30px;
+    }
+}
+
+/* /////////////////////////// */
+
+/* Pick A Star Page: */
+
+@media only screen and (min-width: 0px) {
+    .form {
+        display: block;
+        font-size: 25px;
+        width: 100%;
+    }
+    .title{
+        width: 100%;
+    }
+    .img{
+       width: 100%;
+    }
+}
+
