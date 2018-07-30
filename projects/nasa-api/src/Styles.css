@@ -147,7 +147,7 @@ label select {
 
 .img {
     height: 800px;
-    width: 500px;
+    width: max vw;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 20px;
@@ -158,7 +158,7 @@ label select {
     background-image: url(https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/images/453249main_p1014a2_full.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1000px;
+    height: max vh;
 }
 
 /* /////////////////////////// */
@@ -176,7 +176,7 @@ label select {
     background-image: url(https://www.nasa.gov/sites/default/files/images/508574main_M31_XMM_HERSCHEL_full.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1000px;
+    height: max vh;
 }
 
 .text {

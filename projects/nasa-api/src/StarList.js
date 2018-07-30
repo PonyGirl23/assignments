@@ -41,7 +41,7 @@ class StarList extends Component {
                         Pick a star:
                         <select value={this.state.value} onChange={this.handleChange}>
                             {this.props.stars.map(star => {
-                                return <option key={star.data[0].nasa_id}value={star.data[0].nasa_id}>{star.data[0].title}</option>
+                                return <option key={star.data[0].nasa_id} value={star.data[0].nasa_id}>{star.data[0].title}</option>
                             })}
                         </select>
                     </label>

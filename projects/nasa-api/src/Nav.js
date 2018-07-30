@@ -14,7 +14,7 @@ function Nav(props) {
                     <ul className="navbar-nav">
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown link
+                                Star Links
                         </a>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <Link to='/'className="dropdown-item">Home</Link>
@@ -34,11 +34,3 @@ function Nav(props) {
 export default Nav
 
 
-{/* <div className="nav">
-        <h1 className="Header">Stars: Gems Of The Cosmos</h1>
-            <div className="Links">
-            <Link to="/">Home</Link>
-            <Link to="/Stars">See The Stars</Link>
-            <Link to="/inDepth">In Depth</Link> 
-            </div>
-        </div> */}

@@ -9,7 +9,7 @@ const initialState = {
 // Action Creators => Send Action Objects:
 export const getStars = () => {
     return dispatch => {
-        axios.get("https://images-api.nasa.gov/search?q=stars")
+        axios.get("https://images-api.nasa.gov/search?q=")
             .then(response => {
                 dispatch({
                     type: "GET_STARS",
