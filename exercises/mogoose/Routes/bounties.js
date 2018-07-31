@@ -30,7 +30,7 @@ bountiesRouter.route('/:id')
     .delete((req, res) => {
         Bounty.findByIdAndRemove(req.params.id, (err) => {
             if (err) return res.status(500).send(err);
-            res.status(204).send();
+            return res.status(204).send();
         })
     })
     .put((req, res) => {
