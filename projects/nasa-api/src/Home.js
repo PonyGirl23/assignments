@@ -1,7 +1,7 @@
 import React from 'react'
 import './Styles.css'
 
-function Home(props) {
+function Home() {
     return (
         <div className="Home">
             <div className="twinkle"> </div>
