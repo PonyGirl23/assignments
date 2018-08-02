@@ -1,34 +1,89 @@
 /* ///////////////////// */
 
 /* Nav Bar: */
-.Brand{
+.NavBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
     text-align: center;
+    font-size: x-large; 
+    background: linear-gradient(to right, #213545, #fae2bb);
+}
+
+.Brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: xx-large;
+    text-shadow: 3px 3px #f9e1a6;
     color: black;
     background-image: url(https://www.1757golfclub.com/static/images/event_promo_box_golfcourseBG.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -21px;
-    padding-top: 100px;
-    padding-bottom: 483px;
+    background-attachment: fixed;
+    background-position: bottom;
+    margin-top: -18px;
+    margin-bottom: -21px;
+    padding: 15% 10%;
 }
 
 /* Footie: */
-.Footie{
-    text-align: center;
-    /* background-image: url(http://www.god-cares-ministry.org/wp-content/uploads/2015/07/charityclassic-golf-960x410.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 207px; */
-}
 
-/* Home: */
-.Home{
+.Footie {
     background-image: url(http://www.god-cares-ministry.org/wp-content/uploads/2015/07/charityclassic-golf-960x410.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-left: 700px;
-    padding-bottom: 80px;
+    padding-bottom: 207px;
+    margin-top: -22px;
 }
-.Features{
+
+.Quote {
+    text-align: center;
+    padding-top: 63px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Home: */
+
+.Home {
+    padding-bottom: 80px;
+    background: linear-gradient(#223800, #afc1d2);
+    margin-bottom: -21px;
+}
+
+.Features {
+    font-size: larger;
     padding-top: 40px;
+    padding-left: 33%;
+}
+
+/* Course Input */
+
+.CourseDetails {
+    margin-top: 0px;
+}
+
+.CourseInput {
+    background: linear-gradient(#223800, #afc1d2);
+    text-align: center;
+    margin-top: -22px;
+}
+
+.HoleForm {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Stats: */
+
+.Stats {
+    height: 100%;
+    display: grid;
+    background: linear-gradient(#223800, #afc1d2);
+    text-align: center;
+    margin-top: -22px;
 }

@@ -9,8 +9,8 @@ const statSchema = new Schema({
         ref: "Round"
     },
     hole: Number,
-    par: Number,
-    tee: String,
+    // par: Number,
+    // tee: String,
     strokes: Number,
     notes: String
 })

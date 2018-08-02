@@ -10,7 +10,7 @@ function Home() {
                 <li>Make a profile</li>
                 <li>Select your course and input scorecard information:</li>
                 <ul>
-                    <li>Date PLayed</li>
+                    <li>Date Played</li>
                     <li>Hole Number</li>
                     <li>Par</li>
                     <li>Yardage</li>

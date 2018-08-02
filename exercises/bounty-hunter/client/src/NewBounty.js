@@ -86,13 +86,6 @@ class NewBounty extends Component {
         e.preventDefault();
         this.setState({ id: e.target.value })
 
-        // const deleteBounty = {
-        //     firstName: this.state.firstName,
-        //     lastName: this.state.lastName,
-        //     living: this.state.living,
-        //     price: this.state.price,
-        //     type: this.state.type
-        // }
         axios.delete("/bounties/:id")
         .then(response => {
             this.setState(prevState => {

@@ -17,3 +17,4 @@ function Star(props) {
 export default Star
 
 
+{}
