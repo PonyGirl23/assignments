@@ -18,6 +18,7 @@ function Nav() {
                             <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <Link to='/'className="dropdown-item">Home</Link>
                                 <Link to="/CourseInput" className="dropdown-item">Courses</Link>
+                                <Link to="/RoundInput" className="dropdown-item">Rounds</Link>
                                 <Link to="/Stats" className="dropdown-item">Stats</Link>
                             </div>
                         </li>

@@ -3,11 +3,12 @@ const { Schema } = mongoose
 
 // Model should be capitalized and singular
 const courseSchema = new Schema({
-    name: {
+    courseName: {
         type: String,
         required: true
     },
     description: String,
+    tee: String,
     holes: [{
         num: Number,
         par: Number,

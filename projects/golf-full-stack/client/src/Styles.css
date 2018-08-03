@@ -8,7 +8,7 @@
     justify-content: space-around;
     text-align: center;
     font-size: x-large; 
-    background: linear-gradient(to right, #213545, #fae2bb);
+    background: linear-gradient(to right, #152a38, #fae2bb);
 }
 
 .Brand {
@@ -30,8 +30,8 @@
     padding: 15% 10%;
 }
 
-/* Footie: */
 
+/* Footie: */
 .Footie {
     background-image: url(http://www.god-cares-ministry.org/wp-content/uploads/2015/07/charityclassic-golf-960x410.jpg);
     background-repeat: no-repeat;
@@ -47,8 +47,8 @@
     padding-right: 5px;
 }
 
-/* Home: */
 
+/* Home: */
 .Home {
     padding-bottom: 80px;
     background: linear-gradient(#223800, #afc1d2);
@@ -61,25 +61,42 @@
     padding-left: 33%;
 }
 
+
 /* Course Input */
-
-.CourseDetails {
-    margin-top: 0px;
-}
-
 .CourseInput {
     background: linear-gradient(#223800, #afc1d2);
     text-align: center;
     margin-top: -22px;
 }
 
-.HoleForm {
+.CourseDetails {
+    margin-top: 0px;
+}
+
+.CourseForm {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-/* Stats: */
 
+/* Round Input */
+.RoundInput {
+    background: linear-gradient(#223800, #afc1d2);
+    text-align: center;
+    margin-top: -22px;
+}
+
+.RoundDetails {
+    margin-top: 0px;
+}
+
+.RoundForm {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Stats: */
 .Stats {
     height: 100%;
     display: grid;

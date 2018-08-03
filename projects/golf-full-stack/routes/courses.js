@@ -11,6 +11,7 @@ courseRouter.route('/')
     })
 
     .post((req, res) => {
+        console.log(req.body)
         const newCourse = new Course(req.body)
         newCourse.save((err, savedCourse) => {
             if (err) return res.status(500).send(err)
