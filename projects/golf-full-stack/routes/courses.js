@@ -4,9 +4,10 @@ const Course = require('../models/courses')
 
 courseRouter.route('/')
     .get((req, res) => {
+        console.log('yo')
         Course.find((err, routes) => {
             if (err) return res.status(500).send(err)
-            res.send(routes)
+            return res.send(routes)
         })
     })
 

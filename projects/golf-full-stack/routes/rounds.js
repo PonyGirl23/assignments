@@ -20,7 +20,7 @@ roundRouter.route('/')
 
 roundRouter.route('/:id')
     .get((req, res) => {
-        Round.findById(req.params.id, (err, foundRound) => {
+        Round.findById({_id:req.params.id}, (err, foundRound) => {
             if (err) return res.status(500).send(err)
             return res.send(foundRound)
         })

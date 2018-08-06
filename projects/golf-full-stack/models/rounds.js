@@ -7,8 +7,17 @@ const roundSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: "Course"
     },
-    name: String,
-    date: Date
+    roundName: {
+        type: String,
+        required: true
+    },
+    date: Date,
+    holes: [{
+        num: Number,
+        strokes: Number,
+        puts: Number,
+        notes: String
+    }],
 })
 
 module.exports = mongoose.model('Round', roundSchema)

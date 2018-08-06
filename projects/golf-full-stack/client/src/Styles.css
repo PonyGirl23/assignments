@@ -1,14 +1,36 @@
 /* ///////////////////// */
 
 /* Nav Bar: */
-.NavBar{
+
+.NavBar {
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-content: space-around;
     text-align: center;
-    font-size: x-large; 
+    font-size: 60px;
+    text-shadow: 2px 2px #f9e1a6;
     background: linear-gradient(to right, #152a38, #fae2bb);
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    width: 100%;
+}
+.nav-item {
+    list-style-type: none;
+}
+
+.dropdown-menu{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.dropdown-menu > a {
+    text-decoration: none;
+    color: #172300;
 }
 
 .Brand {
@@ -30,8 +52,12 @@
     padding: 15% 10%;
 }
 
+.Title{
+    margin-bottom: 30px;
+}
 
 /* Footie: */
+
 .Footie {
     background-image: url(http://www.god-cares-ministry.org/wp-content/uploads/2015/07/charityclassic-golf-960x410.jpg);
     background-repeat: no-repeat;
@@ -47,8 +73,8 @@
     padding-right: 5px;
 }
 
-
 /* Home: */
+
 .Home {
     padding-bottom: 80px;
     background: linear-gradient(#223800, #afc1d2);
@@ -56,51 +82,180 @@
 }
 
 .Features {
-    font-size: larger;
+    font-size: x-large;
     padding-top: 40px;
     padding-left: 33%;
 }
 
-
 /* Course Input */
+
 .CourseInput {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "c c c c c c" "i i i d d d" "b b b b b b";
     background: linear-gradient(#223800, #afc1d2);
+    text-shadow: 1px 1px #8e8d84;
     text-align: center;
-    margin-top: -22px;
+    font-size: x-large;
+    margin-top: -33px;
+    padding-top: 5px;
 }
 
 .CourseDetails {
     margin-top: 0px;
+    padding-top: 30px;
+    grid-area: c;
+}
+
+.CourseName {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 40px;
+}
+
+.CourseTee {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.CourseDescription {
+    grid-area: d;
+    padding-bottom: 110px;
+    padding-right: 210px;
+}
+
+.CourseInfo {
+    margin-top: 0px;
+    grid-area: i;
+    display: flex;
+    flex-direction: column;
 }
 
 .CourseForm {
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: right;
+    text-shadow: 1px 1px #8e8d84;
+    display: flex;
+    flex-direction: column;
+    border: solid black 2px;
+    padding: 20px;
+    padding-right: 33%;
 }
 
+.first {
+    grid-column: 1 / 3;
+}
+
+.mid {
+    grid-column: 3 / 5;
+}
+
+.last {
+    grid-column: 5 / -1;
+}
+
+.CoursePar {
+    margin-top: 15px;
+}
+
+.courseCard {
+    font-size: x-large;
+    margin-top: 50px;
+}
+
+/* .CourseButton{
+ font-size: large;
+} */
 
 /* Round Input */
+
 .RoundInput {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "d d d d d d" "i i i i i i";
     background: linear-gradient(#223800, #afc1d2);
+    text-shadow: 1px 1px #8e8d84;
     text-align: center;
-    margin-top: -22px;
+    font-size: x-large;
+    margin-top: -32px;
+    padding-top: 5px;
 }
 
 .RoundDetails {
     margin-top: 0px;
+    padding-top: 30px;
+    grid-area: d;
+    text-align: center;
+}
+
+.RoundInfo {
+    margin-top: 0px;
+    grid-area: i;
+    display: flex;
+    justify-content: space-around;
 }
 
 .RoundForm {
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: right;
+    text-shadow: 1px 1px #8e8d84;
+    display: flex;
+    flex-direction: column;
+    border: solid black 2px;
+    padding: 20px;
+    padding-right: 33%;
 }
 
+.first {
+    grid-column: 1 / 3;
+}
+
+.mid {
+    grid-column: 3 / 5;
+}
+
+.last {
+    grid-column: 5 / -1;
+}
+
+.Input {
+    padding-right: 0px;
+    margin-top: 15px;
+}
+
+.Notes {
+    margin-top: 20px
+}
+
+.roundCard {
+    font-size: x-large;
+    margin-top: 50px;
+}
 
 /* Stats: */
+
 .Stats {
     height: 100%;
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "t t" "c r";
     background: linear-gradient(#223800, #afc1d2);
     text-align: center;
     margin-top: -22px;
+}
+
+.Title {
+    grid-area: t;
+}
+
+.Course {
+    grid-area: c;
+}
+
+.Round {
+    grid-area: r;
 }
