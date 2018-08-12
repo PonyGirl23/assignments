@@ -1,10 +1,10 @@
 const express = require('express')
-const athlete = express.Router()
-const Athlete = require('..models/athletes')
+const athleteRouter = express.Router()
+const Athlete = require('../models/athletes')
 
 athleteRouter.route('/')
     .get((req, res) => {
-        console.log('Hello')
+        console.log('Hello Athletes!')
         Athlete.find((err, routes) => {
             if (err) return res.status(500).send(err)
             return res.send(routes)
@@ -20,7 +20,7 @@ athleteRouter.route('/')
         })
     })
 
-athleteRouter.route('/:id/athlete')
+athleteRouter.route('/:id')
     .get((req, res) => {
         Athlete.findById(req.params.id, (err, foundAthlete) => {
             if (err) return res.status(500).send(err)

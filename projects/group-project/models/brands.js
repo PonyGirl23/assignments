@@ -1,17 +1,23 @@
 const mongoose = require('mongoose')
 const { Schema } = mongoose
 
-const companySchema = new Schema({
-    companyName: {
+const brandSchema = new Schema({
+    brandName: {
         type: String,
         required: true
     },
-    companyContact: {
-        type: String,
-        required: true
+    brandContact: {
+        firstName: {
+            type: String,
+            required: true
+        },
+        lastName: {
+            type: String,
+            required: true
+        },
     },
     sport: {
-        type: string,
+        type: String,
         required: true
     },
     about: String,
@@ -26,17 +32,17 @@ const companySchema = new Schema({
         required: true,
         unique: true
     },
-    followersCount: Number,
+    // followersCount: Number,
     // followers: [],
-    followingCount: Number,
+    // followingCount: Number,
     //  following: [],
-    postsCount: Number,
+    // postsCount: Number,
     // posts: [],
-    likesCount: Number,
+    // likesCount: Number,
     //  likes: [],
     avatar: String,
     isLoggedIn: Boolean,
     lastLogin: String
 
 })
-module.exports = mongoose.model('Company', companySchema)
+module.exports = mongoose.model('Brand', brandSchema)
