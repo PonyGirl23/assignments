@@ -1,0 +1,90 @@
+.page-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 310px 300px 300px 300px 100px 50px;
+    grid-template-areas:
+        "h h a"
+        "f f d"
+        "s s r"
+        "t t n"
+        "o o b"
+        "p p p"
+}
+
+header {
+    grid-area: h;
+    background: url("./images/contours@2x.png"), url("./images/noise.png"), url("./images/gridlines.png"), url("./images/huntington.jpg");
+    text-align: center;
+}
+
+header>h1 {
+    display: block;
+    margin-top: -33px;
+    border-bottom: none;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 3.2em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+header>h2 {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    border-top: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.6em;
+    font-style: italic;
+    margin-top: -35px;
+}
+
+header>img {
+    display: inline-block;
+    position: relative;
+    height: 120px;
+    top: 70px;
+    left: -300px;
+}
+
+.first {
+    grid-area: f;
+    background-color: #fff;
+}
+
+.second {
+    grid-area: s;
+    background-color: rgba(138,188,159,0.5);
+}
+
+.third {
+    grid-area: t;
+}
+
+.fourth {
+    grid-area: o;
+}
+
+.design-selection {
+    grid-area: d;
+    background-color: #e5ede8;
+    margin-top: 311px;
+    margin-bottom: 270px;
+}
+
+.design-archives {
+    grid-area: a;
+    
+}
+.zen-resources{
+    grid-area: r;
+    background-color: rgba(138,188,159,0.5);
+}
+
+.design-blank {
+    grid-area: n;
+    background-color: #e5ede8;
+}
+
+footer {
+    grid-area: p;
+}
