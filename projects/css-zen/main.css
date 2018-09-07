@@ -1,25 +1,22 @@
-.page-wrapper {
+body {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 310px 300px 300px 300px 100px 50px;
-    grid-template-areas:
-        "h h a"
-        "f f d"
-        "s s r"
-        "t t n"
-        "o o b"
-        "p p p"
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 100px 300px 50px;
+    font-family: 'Libre Baskerville', sans-serif;
 }
 
 header {
-    grid-area: h;
+    grid-column: 1/-1;
+    grid-row: 1/2;
     background: url("./images/contours@2x.png"), url("./images/noise.png"), url("./images/gridlines.png"), url("./images/huntington.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
 }
 
 header>h1 {
-    display: block;
-    margin-top: -33px;
+    margin-top: -165px;
+    margin-left: -320px;
     border-bottom: none;
     font-family: 'Julius Sans One', sans-serif;
     font-size: 3.2em;
@@ -36,55 +33,110 @@ header>h2 {
     font-size: 1.6em;
     font-style: italic;
     margin-top: -35px;
+    margin-left: -480px;
 }
 
 header>img {
     display: inline-block;
     position: relative;
-    height: 120px;
-    top: 70px;
-    left: -300px;
+    height: 250px;
+    top: 25px;
+    left: -485px;
+    opacity: 0.5;
+}
+/* p{
+    font-family: 'Libre Baskerville', sans-serif;
+} */
+
+h3{
+    margin: 2em 0 0 0;
+    color: #2e484c;
+    /* font-family: 'Julius Sans One', sans-serif; */
+    font-size: 1.8em;
+    font-weight: normal;
+    text-transform: uppercase;
 }
 
 .first {
-    grid-area: f;
     background-color: #fff;
+    grid-column: 1/2;
+    grid-row: 2/5;
 }
 
 .second {
-    grid-area: s;
     background-color: rgba(138,188,159,0.5);
+    grid-column: 1/2;
+    grid-row: 5/7;
+    
 }
 
 .third {
-    grid-area: t;
+    grid-column: 1/2;
+    grid-row: 7/9;
 }
 
 .fourth {
-    grid-area: o;
+    display: flex;
+    align-items: center;
+    grid-column: 1/-1;
+    grid-row: 9/11;
+    background-size: 50% auto, auto, auto, cover;
+    background-image: url(./images/contours@2x.png), url(./images/gridlines.png), url(./images/noise.png), url(./images/koi.jpg);
+    /* font-family: 'Libre Baskerville', sans-serif; */
+    font-style: italic;
+    line-height: 2;
+    width: auto;
+    padding: 1em 12%;
+}
+
+.fourth p:last-child{
+    margin: 2em 0 0 0;
+    color: rgba(255, 255, 255, 0.4);
+    /* font-family: 'Libre Baskerville', sans-serif; */
+    font-style: italic;
+    font-size: 1.8em;
+    font-weight: normal;
+    text-align: center;
+    line-height: 2;
+}
+.fourth p:last-child a{
+    color: rgba(255, 255, 255, 0.7);
+    font-style: normal;
+    /* font-family: 'Libre Baskerville', sans-serif; */
 }
 
 .design-selection {
-    grid-area: d;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: space-evenly;
+    grid-column: 2/3;
+    grid-row: 2/5;
     background-color: #e5ede8;
-    margin-top: 311px;
-    margin-bottom: 270px;
 }
 
 .design-archives {
-    grid-area: a;
+    margin-left: 850px;
+    margin-top: -140px;
+    grid-column: 2/3;
+    grid-row: 4/6;
+   
     
 }
+
 .zen-resources{
-    grid-area: r;
-    background-color: rgba(138,188,159,0.5);
+    grid-column: 2/3;
+    grid-row: 5/7;
+    background-color:#b3d0bf;
 }
 
 .design-blank {
-    grid-area: n;
-    background-color: #e5ede8;
+    background-color: #e5ede8; 
+    grid-column: 2/3;
+    grid-row: 7/9;
 }
 
 footer {
-    grid-area: p;
+    grid-column: 1/-1;
+    grid-row: 11/-1;
 }
